@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 export default function AuthView() {
   // const [currentTime, setCurrentTime] = useState(new Date());
 
