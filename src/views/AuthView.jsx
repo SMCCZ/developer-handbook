@@ -1,13 +1,4 @@
 export default function AuthView() {
-  // const [currentTime, setCurrentTime] = useState(new Date());
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentTime(new Date());
-  //   }, 1000);
-
-  //   return () => clearInterval(intervalId);
-  // }, []);
   return (
     <div
       className="card"
@@ -58,6 +49,8 @@ export default function AuthView() {
         >
           Login
         </button>
+
+        <div style={googleButtonStyle}>Continue with Google</div>
       </div>{" "}
     </div>
   );
@@ -78,5 +71,16 @@ const buttonStyle = {
   padding: "16px 32px",
   color: "white",
   borderRadius: "8px",
+  marginBottom: "16px",
+  fontSize: "16px",
+};
+const googleButtonStyle = {
+  border: "1px solid blue",
+  padding: "16px 32px",
+  color: "blue",
+  width: "274px",
+  borderRadius: "8px",
   marginBottom: "32px",
+  fontSize: "16px",
+  
 };
