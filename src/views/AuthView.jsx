@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function AuthView() {
+  const navigate = useNavigate();
   return (
     <div
       className="card"
@@ -23,6 +26,7 @@ export default function AuthView() {
           margin: "16px",
         }}
       >
+        {/* <LikeButton  /> */}
         <p
           style={{
             fontSize: "16px",
@@ -45,6 +49,7 @@ export default function AuthView() {
           style={buttonStyle}
           onClick={() => {
             console.log(Date());
+            navigate("/home");
           }}
         >
           Login
@@ -82,5 +87,4 @@ const googleButtonStyle = {
   borderRadius: "8px",
   marginBottom: "32px",
   fontSize: "16px",
-  
 };
