@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 export default function AuthView() {
+  
   const navigate = useNavigate();
   return (
     <div
